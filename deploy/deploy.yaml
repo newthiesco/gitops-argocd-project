@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-app-deployment
+  name: argocd-app-deployment
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: demo-app
+      app: argocd-app
   template:
     metadata:
       labels:
-        app: demo-app
+        app: argocd-app
     spec:
       containers:
-      - name: demo-app
+      - name: argoce-app
         image: thiexco/argocd-app:v2025-07-12-15-17-04
         ports:
         - containerPort: 5000
