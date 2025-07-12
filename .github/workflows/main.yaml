@@ -73,8 +73,8 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          git config --global user.email " "<>"
-          git config --global user.name "GitHub Actions"
+          git config --global user.email "<>"
+          git config --global user.name "GitHub Actions Bot"
           git add deploy/deploy.yaml
           git commit -m "Update deployment image to ${{ secrets.DOCKER_USERNAME }}/argocd-app:${{ env.VERSION }}"
           git push origin main
