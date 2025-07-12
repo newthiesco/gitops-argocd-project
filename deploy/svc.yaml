@@ -4,7 +4,7 @@ metadata:
   name: demo-app-service
 spec:
   selector:
-    app: demo-app
+    app: argocd-app
   ports:
     - protocol: TCP
       port: 5000
