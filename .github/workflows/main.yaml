@@ -67,6 +67,6 @@ jobs:
             -t ${{ secrets.DOCKER_USERNAME }}/argocd-app:${{ env.VERSION }} .
 
       # Push again (optional step - can be removed since --push already did it)
-      - name: Push Docker image
-        run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/argocd-app:${{ env.VERSION }}
+      # - name: Push Docker image
+      #   run: |
+      #     docker push ${{ secrets.DOCKER_USERNAME }}/argocd-app:${{ env.VERSION }}
