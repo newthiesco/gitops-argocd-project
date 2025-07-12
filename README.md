@@ -338,3 +338,10 @@ Application running on http://172.29.213.129:30008
 
 
 ![Youtube video link](https://youtu.be/XTxH3xrb9Js)
+
+
+## GitOps ArgoCD Project Final Result
+
+![alt text](imgs/argocd-app-output.png)
+
+![alt text](imgs/argocd-dashboard.png)
